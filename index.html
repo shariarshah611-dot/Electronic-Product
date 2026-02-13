@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shihab Electronics Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Shihab Electronics</h1>
+  <p>Robotics | RC Cars | Smart Lights</p>
+</header>
+
+<section class="products">
+
+  <div class="card">
+    <img src="https://i.imgur.com/3ZQ3Z6X.jpg">
+    <h2>RC Car</h2>
+    <p>Price: 2200৳</p>
+    <button onclick="order('RC Car',2200)">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/yQ8ZQ9G.jpg">
+    <h2>Robot Kit</h2>
+    <p>Price: 2800৳</p>
+    <button onclick="order('Robot Kit',2800)">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://i.imgur.com/Qb6Qp3G.jpg">
+    <h2>LED Strip</h2>
+    <p>Price: 900৳</p>
+    <button onclick="order('LED Strip',900)">Buy Now</button>
+  </div>
+
+</section>
+
+<section class="order-section" id="orderForm">
+  <h2>Order Form</h2>
+  <form onsubmit="submitOrder(event)">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="phone" placeholder="Your Phone" required>
+    <input type="text" id="product" readonly>
+    <input type="number" id="price" readonly>
+    <button type="submit">Confirm Order</button>
+  </form>
+
+  <div class="payment">
+    <h3>bKash Payment</h3>
+    <p>Send money to: 01302133194</p>
+    <p>After payment, we will call you for confirmation.</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
