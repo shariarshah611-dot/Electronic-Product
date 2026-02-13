@@ -16,3 +16,17 @@ function submitOrder(event) {
 
   window.open(`https://wa.me/8801302133194?text=${message}`, '_blank');
 }
+@media (max-width: 768px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  input {
+    width: 90%;
+  }
+}
